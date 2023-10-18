@@ -175,3 +175,6 @@ cython_debug/
 
 # ignore static file
 static/
+
+# ignore poetry.lock
+server/poetry.lock
