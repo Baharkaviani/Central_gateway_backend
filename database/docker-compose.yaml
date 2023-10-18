@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+
+  sm_db:
+    image: mysql:8.1.0
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'smart_meter'
+      MYSQL_USER: 'smart_meter'
+      MYSQL_PASSWORD: 'B@harKav!ani'
+      MYSQL_ROOT_PASSWORD: 'r00t@dm!n'
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    volumes:
+      - sm_volume:/var/lib/mysql
+
+volumes:
+  sm_volume: {}
