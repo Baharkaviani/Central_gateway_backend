@@ -178,3 +178,6 @@ static/
 
 # ignore poetry.lock
 server/poetry.lock
+
+# ignore .python-version
+server/.python-version
