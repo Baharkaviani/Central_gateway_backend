@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "smart-meter"
+version = "0.0.1"
+description = ""
+authors = ["bahar"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.2.6"
+djangorestframework = "^3.14.0"
+markdown = "^3.4.4"
+django-filter = "^23.3"
+django-health-check = "^3.17.0"
+django-cors-headers = "^4.2.0"
+mysqlclient = "^2.2.0"
+psutil = "^5.9.5"
+paho-mqtt = "^1.6.1"
+gunicorn = "^21.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.3.3"
+black = "^23.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
